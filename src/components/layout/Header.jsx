@@ -5,6 +5,7 @@ import { useState } from "react";
 
 const Header = ({ toggleTheme, theme }) => {
   const [isOpen, setIsOpen] = useState(false);
+  console.log("added console log for theme in header.jsx", theme);
 
   return (
     <header className="sticky top-0 w-full bg-white dark:bg-black border-b border-gray-200 dark:border-gray-800 z-50 transition-colors duration-300">
