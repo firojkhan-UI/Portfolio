@@ -9,7 +9,7 @@ import ScrollToTop from "../components/ScrollToTop";
 function AppRoutes({ toggleTheme, theme }) {
   return (
     <BrowserRouter>
-      <ScrollToTop />   {/* ✅ MOVE HERE */}
+      <ScrollToTop />
 
       <Routes>
         <Route element={<MainLayout toggleTheme={toggleTheme} theme={theme} />}>
