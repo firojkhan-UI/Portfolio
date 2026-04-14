@@ -5,7 +5,7 @@ import ScrollToTop from "../ScrollToTop";
 
 const MainLayout = ({ toggleTheme, theme }) => {
   return (
-    <div className="flex flex-col min-h-screen bg-white dark:bg-gray-900 text-black dark:text-white transition-colors duration-300">
+    <div className="flex flex-col min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
       
       <ScrollToTop />
 

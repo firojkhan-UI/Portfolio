@@ -2,13 +2,13 @@ import clsx from "clsx";
 
 function Button({ children, icon, variant = "primary", className }) {
   const baseStyle =
-    "inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-medium transition";
+    "inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg sm:rounded-xl text-xs sm:text-sm font-medium transition";
 
   const variants = {
     primary:
-      "bg-indigo-600 text-white hover:bg-indigo-700",
+      "bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-100",
     outline:
-      "border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-800",
+      "bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-600 text-gray-800 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800",
   };
 
   return (

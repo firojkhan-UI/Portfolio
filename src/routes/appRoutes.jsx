@@ -1,23 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MainLayout from "../components/layout/MainLayout";
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Projects from "../pages/Projects";
-import Contact from "../pages/Contact";
-import ScrollToTop from "../components/ScrollToTop";
+import SinglePageLayout from "../components/layout/SinglePageLayout";
 
 function AppRoutes({ toggleTheme, theme }) {
   return (
     <BrowserRouter>
-      <ScrollToTop />
-
       <Routes>
-        <Route element={<MainLayout toggleTheme={toggleTheme} theme={theme} />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Route>
+        <Route
+          path="/*"
+          element={<SinglePageLayout toggleTheme={toggleTheme} theme={theme} />}
+        />
       </Routes>
     </BrowserRouter>
   );
